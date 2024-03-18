@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main class="main">
+        <header>
+            <h2 class="title">CALCULATOR</h2>
+        </header>
+        <section class="calculator-outter-container">
+            <div class="calculator-container">
+                <input type="text" placeholder="0" id="calculator-display" class="calculator-display" disabled>
+                <div class="calculator-btns-container">
+                    <div id="calculator-btns-right" class="calculator-btns-row">
+                        <button class="calculator-btns" onclick="handleClear()">CE</button>
+                        <button class="calculator-btns" onclick="handleBackSpace()">&#8592;</button>
+                    </div>
+                    <div class="calculator-btns-row">
+                        <button class="calculator-btns" onclick="handleInput('7')">7</button>
+                        <button class="calculator-btns" onclick="handleInput('8')">8</button>
+                        <button class="calculator-btns" onclick="handleInput('9')">9</button>
+                        <button class="calculator-btns" onclick="handleInput('/')">/</button>
+                    </div>
+                    <div class="calculator-btns-row">
+                        <button class="calculator-btns" onclick="handleInput('4')">4</button>
+                        <button class="calculator-btns" onclick="handleInput('5')">5</button>
+                        <button class="calculator-btns" onclick="handleInput('6')">6</button>
+                        <button class="calculator-btns" onclick="handleInput('*')">*</button>
+                    </div>
+                    <div class="calculator-btns-row">
+                        <button class="calculator-btns" onclick="handleInput('1')">1</button>
+                        <button class="calculator-btns" onclick="handleInput('2')">2</button>
+                        <button class="calculator-btns" onclick="handleInput('3')">3</button>
+                        <button class="calculator-btns" onclick="handleInput('+')">+</button>
+                    </div>
+                    <div class="calculator-btns-row">
+                        <button class="calculator-btns" onclick="handleInput('0')">0</button>
+                        <button class="calculator-btns" onclick="handleInput('.')">.</button>
+                        <button class="calculator-btns" onclick="handleEvaluate()">=</button>
+                        <button class="calculator-btns" onclick="handleInput('-')">-</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h6 class="footer-text"><a href="https://github.com/dvpateliy">Made by dvpatel.iy</a></h6>
+        </footer>
+    </main>
+</body>
+
+</html>
